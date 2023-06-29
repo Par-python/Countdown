@@ -286,7 +286,7 @@ body {
 }
 @media only screen and (max-width: 500px) {
     body {
-      object-fit: cover;
+        touch-action: none;
     }
     .title-letter:nth-child(6){
         margin-right: 2rem;
