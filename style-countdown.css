@@ -8,11 +8,6 @@
 body {
     height: 100vh;
     width: 100%;
-    background-image: url(./images/backgrounds/countdown/countdown-bg.png);
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center;
     overflow-y: hidden;
     overflow-x: hidden;
     color: white;
@@ -111,6 +106,11 @@ body {
 .coming-soon {
     height: 100vh;
     width: 100%;
+    background-image: url(./images/backgrounds/countdown/countdown-bg.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -219,6 +219,11 @@ body {
     }
 }
 @media only screen and (max-width: 900px) {
+    body {
+        background-size: auto;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    }
     .countdown-cards {
         margin-left: 30rem;
         margin-top: 27rem;
@@ -273,6 +278,9 @@ body {
     }
 }
 @media only screen and (max-width: 500px) {
+    body {
+      object-fit: cover;
+    }
     .title-letter:nth-child(6){
         margin-right: 2rem;
     }
