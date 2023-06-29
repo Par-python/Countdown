@@ -1,6 +1,9 @@
 window.addEventListener('load', () => {
     const loadingScreen = document.querySelector('.loading-screen');
     loadingScreen.classList.add('loading-finished');
+});
+
+document.addEventListener('click', () => {
     audioPlay();
 });
 
