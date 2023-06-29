@@ -3,9 +3,7 @@ window.addEventListener('load', () => {
     loadingScreen.classList.add('loading-finished');
 });
 
-document.addEventListener('click', () => {
-    audioPlay();
-});
+document.addEventListener('click', audioPlay, {once:true})
 
 const countDown = () => {
     const countDate = new Date('July 21, 2023 00:19:00').getTime();
