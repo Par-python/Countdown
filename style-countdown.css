@@ -277,7 +277,7 @@ body {
         font-size: 1rem;
     }
     .coming-soon {
-        background-image: url(/images/backgrounds/);
+        background-image: url(/images/backgrounds/countdown/countdown-mobile-bg.png);
         background-size: cover;
         background-attachment: fixed;
         background-repeat: no-repeat;
