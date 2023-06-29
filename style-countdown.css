@@ -276,6 +276,13 @@ body {
     .time-title{
         font-size: 1rem;
     }
+    .coming-soon {
+        background-image: url(/images/backgrounds/);
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
 }
 @media only screen and (max-width: 500px) {
     body {
