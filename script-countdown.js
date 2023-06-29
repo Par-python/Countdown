@@ -1,6 +1,7 @@
 window.addEventListener('load', () => {
     const loadingScreen = document.querySelector('.loading-screen');
     loadingScreen.classList.add('loading-finished');
+    audioPlay();
 });
 
 const countDown = () => {
@@ -32,5 +33,3 @@ function audioPlay() {
     audioMusic.loop = true;
     audioMusic.play();
 };
-
-audioPlay();
