@@ -30,7 +30,7 @@ setInterval(countDown, 1000);
 
 function audioPlay() {
     const audioMusic = new Audio('images/backgrounds/music/background-music.mp3');
-    audioMusic.volume = 0.2;
+    audioMusic.volume = 0.5;
     audioMusic.loop = true;
     audioMusic.play();
 };
