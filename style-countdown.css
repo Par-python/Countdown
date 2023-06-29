@@ -1,0 +1,293 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Press Start 2P', cursive;
+    /* border: 2px solid red; */
+}
+body {
+    height: 100vh;
+    width: 100%;
+    background-image: url(./images/backgrounds/countdown/countdown-bg.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    color: white;
+}
+@keyframes cloud-4{
+    0% {
+        transform: translateX(900%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+@keyframes cloud-5{
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(900%);
+    }
+}
+@keyframes airplane-3{
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(3000%);
+    }
+}
+@keyframes stay-cards{
+    0% {
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+    100% {
+        transfrom: translateY(0px);
+    }
+}
+@keyframes cloud-6{
+    0% {
+        transform: translateX(900%);
+    }
+    100% {
+        transform: translateX(-1000%);
+    }
+}
+.loading-screen {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #83AEEC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    transition: opacity 2s cubic-bezier(0.68,-0.13, 0.97, 0.97);
+}
+.cloud-6,
+.cloud-7,
+.cloud-8 {
+    height:12rem;
+    width: 12rem;
+    position: absolute;
+    right: 0%;
+}
+.cloud-6 {
+    top: 25%;
+    transform: translate(100%, -25%);
+    animation: cloud-6 10s ease-in forwards;
+    animation-iteration-count: infinite;
+}
+.cloud-7 {
+    top: 50%;
+    transform: translate(100%, -50%);
+    animation: cloud-6 12s ease-in forwards;
+    animation-iteration-count: infinite;
+}
+.cloud-8 {
+    top: 75%;
+    transform: translate(100%, -75%);
+    animation: cloud-6 9s ease-in forwards;
+    animation-iteration-count: infinite;
+}
+.instructions {
+    height: 90vh;
+    width: 50vw;
+    animation: stay-cards 2s ease-in-out infinite;
+    z-index: 4;
+}
+.loading-finished{
+    opacity: 0;
+    pointer-events: none;
+}
+.coming-soon {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.cloud-4{
+    height:12rem;
+    width: 12rem;
+    margin-right: 100rem;
+    margin-bottom: 35rem;  
+    animation: cloud-4 8s ease-in forwards;
+    animation-iteration-count: infinite;
+    position: absolute;
+}
+.cloud-5{
+    height:12rem;
+    width: 12rem;
+    margin-right: 100rem;
+    margin-bottom: 25rem;  
+    animation: cloud-5 10s ease-in forwards;
+    animation-iteration-count: infinite;
+    position: absolute;
+}
+.airplane-3 {
+    height: 4rem;
+    width: 4rem;
+    margin-right: 100rem;
+    margin-bottom: 21rem;  
+    animation: airplane-3 12s ease-in forwards;
+    animation-iteration-count: infinite;
+    position: absolute;
+    z-index: 2;
+}
+.countdown-cards{
+    height:12rem;
+    width: 12rem;
+    margin-right: 72rem;
+    margin-top: 23rem;  
+    position: absolute;
+    animation: stay-cards 2s ease-in-out infinite;
+}
+.lucky-block{
+    height: 8rem;
+    width: 8rem;
+    margin-left: 75rem;
+    margin-top: 25rem;  
+    position: absolute;
+    /* animation: stay-cards 5s ease-in-out infinite; */
+}
+.title {
+    font-size: 6vw;
+    display: inline-block;
+    text-shadow: 0px 5px 0px rgba(204, 204, 204, 0.5), 
+    0px 10px 0px rgba(204, 204, 204, 0.3);
+}
+.title-letter:nth-child(6){
+    margin-right: 5rem;
+}
+.countdown {
+    margin-top: 10vh;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.day,
+.hour,
+.minute,
+.second {
+    font-size: 3rem;
+}
+.time-title{
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    text-shadow: 0px 5px 0px rgba(204, 204, 204, 0.5), 
+        0px 10px 0px rgba(204, 204, 204, 0.3);
+}
+@media only screen and (max-width: 1312px) {
+    .countdown-cards {
+        margin-left: 12rem;
+        margin-top: 27rem;
+    }
+    .lucky-block {
+        margin-right: 15rem;
+    }
+}
+@media only screen and (max-width: 1213px) {
+    .countdown-cards {
+        margin-left: 17rem;
+        margin-top: 27rem;
+    }
+    .lucky-block {
+        margin-right: 17rem;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .countdown-cards {
+        margin-left: 27rem;
+        margin-top: 27rem;
+    }
+    .lucky-block {
+        margin-right: 20rem;
+    }
+    .instructions {
+        height: 70vh;
+        width: 50vw;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .countdown-cards {
+        margin-left: 30rem;
+        margin-top: 27rem;
+    }
+    .lucky-block {
+        margin-right: 25rem;
+    }
+}
+@media only screen and (max-width: 867px) {
+    .countdown-cards {
+        margin-left: 35rem;
+        margin-top: 27rem;
+    }
+    .lucky-block {
+        margin-right: 35rem;
+    }
+    .instructions {
+        height: 50vh;
+        width: 30vw;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .countdown-cards {
+        display: none;
+    }
+    .lucky-block {
+        display: none;
+    }
+    .instructions {
+        height: 40vh;
+        width: 40vw;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .countdown-cards {
+        display: none;
+    }
+    .lucky-block {
+        display: none;
+    }
+    .title-letter {
+        font-size: 5vw;
+    }
+    .day,
+    .hour,
+    .minute,
+    .second {
+    font-size: 1.5rem;
+    }
+    .time-title{
+        font-size: 1rem;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .title-letter:nth-child(6){
+        margin-right: 2rem;
+    }
+    .day,
+    .hour,
+    .minute,
+    .second {
+    font-size: 0.9rem;
+    }
+    .time-title{
+        font-size: 0.7rem;
+    }
+    .instructions {
+        height: 30vh;
+        width: 40vw;
+    }
+}
+
+
