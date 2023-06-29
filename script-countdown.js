@@ -1,9 +1,6 @@
 window.addEventListener('load', () => {
     const loadingScreen = document.querySelector('.loading-screen');
     loadingScreen.classList.add('loading-finished');
-});
-
-document.body.addEventListener("mousemove", () => {
     audioPlay();
 });
 
@@ -32,7 +29,7 @@ setInterval(countDown, 1000);
 
 function audioPlay() {
     const audioMusic = new Audio('images/backgrounds/music/background-music.mp3');
-    audioMusic.volume = 0.5;
+    audioMusic.volume = 0.2;
     audioMusic.loop = true;
     audioMusic.play();
 };
