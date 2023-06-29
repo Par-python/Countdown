@@ -31,5 +31,6 @@ function audioPlay() {
     const audioMusic = new Audio('images/backgrounds/music/background-music.mp3');
     audioMusic.volume = 0.5;
     audioMusic.loop = true;
+    audioMusic.muted = true;
     audioMusic.play();
 };
