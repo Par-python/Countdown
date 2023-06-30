@@ -379,15 +379,41 @@ input{
 }
 .memories-name {
     color:#fff;
-    font-size: 3.5vw;
+    font-size: 11vw;
     width: 100vw;
     height: 10vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
     margin-top: 50vh;
 }
-.letters-2{
-    display:inline-block;
-    font-size: 15vh;
+.image {
+    box-shadow: 5px 0 white, -5px 0 white, 0 -5px white, 0 5px white, 10px 0 black, -10px 0 black, 0 -10px black, 0 10px black, 0 0 0 5px black;
+    position: absolute;
+}
+.image-1 {
+    width: 20vw;
+    margin-left: 70vw;
+    margin-top: 70vh;
+}
+.image-2 {
+    width: 25vw;
+    margin-left: 15vw;
+    margin-top: 62vh;
+}
+.image-3 {
+    width: 25vw;
+    margin-right: 30vw;
+    margin-top: 10vh;
+}
+.image-4 {
+    width: 10vw;
+    margin-right: 65vw;
+    margin-top: 60vh;
+}
+.image-5 {
+    width: 10vw;
+    margin-left: 45vw;
+    margin-top: 10vh;
 }
