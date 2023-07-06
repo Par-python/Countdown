@@ -386,7 +386,6 @@ input{
     align-items: center;
 }
 .memories-name {
-    color:#fff;
     font-size: 11vw;
     width: 100vw;
     height: 10vh;
@@ -395,6 +394,10 @@ input{
     justify-content: center;
     align-items: center;
     margin-top: 50vh;
+}
+.memories-name > a {
+    text-decoration: none;
+    color: white;
 }
 .image {
     box-shadow: 5px 0 white, -5px 0 white, 0 -5px white, 0 5px white, 10px 0 black, -10px 0 black, 0 -10px black, 0 10px black, 0 0 0 5px black;
@@ -431,7 +434,22 @@ input{
     margin-left: 45vw;
     margin-top: 10vh;
 }
-.jorunals {
+.journals {
     width: auto;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.journals-name {
+    font-size: 3vw;
+    margin-top: 5rem;
+    color:#fff;
+}
+.journals-content{
+    height: 100vh;
+    width: 100vw;
+    border: 2px solid red;
+    display: flex;
+    flex-direction: row;
 }
