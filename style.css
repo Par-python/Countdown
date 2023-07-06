@@ -283,10 +283,10 @@ input{
    width: 30vmin;
 }
 .whole-card {
-    box-shadow: 5px 0 white, -5px 0 white, 0 -5px white, 0 5px white, 10px 0 black, -10px 0 black, 0 -10px black, 0 10px black, 0 0 0 5px black;
+    box-shadow: 5px 0 #f8f7f7, -5px 0 #f8f7f7, 0 -5px #f8f7f7, 0 5px #f8f7f7, 10px 0 #202529, -10px 0 #202529, 0 -10px #202529, 0 10px #202529, 0 0 0 5px #202529;
 }
 .small-card {
-    box-shadow: 2px 0 white, -2px 0 white, 0 -2px white, 0 2px white, 5px 0 black, -5px 0 black, 0 -5px black, 0 5px black, 0 0 0 3px black;
+    box-shadow: 2px 0 #f8f7f7, -2px 0 #f8f7f7, 0 -2px #f8f7f7, 0 2px #f8f7f7, 5px 0 #202529, -5px 0 #202529, 0 -5px #202529, 0 5px #202529, 0 0 0 3px #202529;
 }
 .card{
     aspect-ratio: 5/7;
@@ -400,7 +400,7 @@ input{
     color: white;
 }
 .image {
-    box-shadow: 5px 0 white, -5px 0 white, 0 -5px white, 0 5px white, 10px 0 black, -10px 0 black, 0 -10px black, 0 10px black, 0 0 0 5px black;
+    box-shadow: 5px 0 #f8f7f7, -5px 0 #f8f7f7, 0 -5px #f8f7f7, 0 5px #f8f7f7, 10px 0 #202529, -10px 0 #202529, 0 -10px #202529, 0 10px #202529, 0 0 0 5px #202529;
     position: absolute;
     opacity: 0;
     transition: opacity 250ms ease-in;
@@ -442,14 +442,57 @@ input{
     align-items: center;
 }
 .journals-name {
-    font-size: 3vw;
+    font-size: 5vw;
     margin-top: 5rem;
     color:#fff;
 }
 .journals-content{
     height: 100vh;
     width: 100vw;
-    border: 2px solid red;
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.journals-text{
+    width: 75vh;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    font-size: 3vw;
+    color:#f8f7f7;
+}
+.journals-text > p {
+    margin-left: 1rem;
+    margin-top: 2rem;
+}
+.learn-more-text {
+    font-size: 1vw;
+}
+.book-gif{
+    cursor: pointer;
+}
+.review-method{
+    width: auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.review-method-title{
+    width: auto;
+    height: fit-content;
+    font-size: 7vw;
+    color: white;
+}
+.lucky-block{
+    width: 50vh;
+    height: 50vh;
+    position: absolute;
+    margin-top: 20rem;
+}
+.footer{
+    width: auto;
+    height: 100vh;
 }
