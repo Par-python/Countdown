@@ -17,13 +17,32 @@ window.onpointermove = event => {
 
 //   }, { duration: 1000, fill: "forwards" });
 
+// const link = document.querySelectorAll('.hover');
+
+// link.forEach(hover => {
+//   hover.addEventListener('mouseenter', () => {
+
+//     const changeColor = document.getElementById("sun");
+//     changeColor.classList.add('change-sun');
+
+//   });
+//   hover.addEventListener('mouseleave', () => {
+    
+//     const changeColor = document.getElementById("sun");
+//     changeColor.classList.remove('change-sun');
+//   });
+// });
+
 const link = document.querySelectorAll('.hover');
 
 link.forEach(hover => {
   hover.addEventListener('mouseenter', () => {
-
-    const changeColor = document.getElementById("sun");
-
+    document.getElementById("sun").style.backgroundImage = 
+      'url(./images/backgrounds/sun/sun-hover-gif.gif)'
+  });
+  hover.addEventListener('mouseleave', () => {
+    document.getElementById("sun").style.backgroundImage =
+      'url(./images/backgrounds/sun/sun-mouse-track.png)'
   });
 });
 
