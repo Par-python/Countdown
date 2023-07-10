@@ -93,7 +93,7 @@ body{
     text-align: center;
     line-height: 20px;
     color:#F0EF39;
-    cursor: none;
+    cursor: pointer;
     transition: all 0.3 ease ;
     position: fixed;
 }
@@ -110,6 +110,7 @@ body{
     clip-path: circle(25px at calc(100% - 45px) 45px);
     transition: all 2s ease-in-out;
     z-index:5;
+    cursor: auto;
 }
 .navbar ul li a{
     color: #56BEFA;
