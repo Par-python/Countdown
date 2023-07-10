@@ -179,10 +179,6 @@ input{
     background-size: contain;
     z-index: -1;
 }
-.change-sun {
-    background-image: url(./images/backgrounds/sun/sun-hover-gif.gif);
-    background-size: contain;
-}
 .header {
     margin: auto;
     display: flex;
