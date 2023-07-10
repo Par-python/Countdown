@@ -70,6 +70,7 @@ body{
     overflow-x: hidden;
     transition: 2s all;
     cursor: none;
+    overflow-x: hidden;
 }
 .section2{
     background-color: #74c6f6;
@@ -427,6 +428,7 @@ input{
 }
 .image.appear {
     opacity: 1;
+    z-index: 2;
 }
 .image-1 {
     width: 20vw;
@@ -452,6 +454,17 @@ input{
     width: 10vw;
     margin-left: 45vw;
     margin-top: 10vh;
+}
+.airplane-3 {
+    display: flex;
+    flex-direction: row;
+    height: 3rem;
+    width: 8rem;
+    margin-top: 30vh;
+    position: absolute;
+    margin-right: 150vw;
+    animation: airplane-1 8s ease-in forwards;
+    animation-iteration-count: infinite;
 }
 .journals {
     width: auto;
