@@ -6,8 +6,9 @@ window.onpointermove = event => {
   sun.animate({
     left: `${clientX}px`,
     top: `${clientY}px`
-  }, { duration: 1000, fill: "forwards" });
+  }, {duration: 1000, fill: "forwards"});
 }
+
 // const sun = document.getElementById("sun")
         
 // document.addEventListener("mousemove", function (event) {
@@ -15,6 +16,34 @@ window.onpointermove = event => {
 //     sun.style.left = `${event.clientX}px`
 
 //   }, { duration: 1000, fill: "forwards" });
+
+const link = document.querySelectorAll('.hover');
+
+link.forEach(hover => {
+  hover.addEventListener('mouseenter', () => {
+
+    const changeColor = document.getElementById("sun");
+
+  });
+});
+
+const colors = ['', 'section2', 'section3', 'section4', 'section5', 'section6']
+
+const sections = [...document.querySelectorAll('section')]
+
+window.addEventListener('scroll', function () {
+
+  const scrollFromTop = window.scrollY
+
+  for (let i = 0; sections.length > i; i++) {
+
+    if (scrollFromTop <= sections[i].offsetTop) {
+      document.body.className = colors[i] 
+      break
+    } 
+
+  }
+})
 
 const imageFade = document.querySelectorAll('.image');
 
@@ -37,3 +66,4 @@ const appearOnScroll = new IntersectionObserver( function(entries, appearOnScrol
 imageFade.forEach(images => {
   appearOnScroll.observe(images);
 })
+

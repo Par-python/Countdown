@@ -58,16 +58,33 @@
 }
 @keyframes image-scale {
     0% {
-        transform: scale(0.5);
+        transform: translateX(900%);
     }
     100% {
-        transform: scale(1);
+        transform: translateX(-900%);
     }
 }
 body{
-    background-image: url(./images/backgrounds/sky/background-sky.png);
+    background-color: #56BEFA;
     min-height: 100vh;
     overflow-x: hidden;
+    transition: 2s all;
+    cursor: none;
+}
+.section2{
+    background-color: #74c6f6;
+}
+.section3{
+    background-color: #83cbf5;
+}
+.section4{
+    background-color: #91d4fc;
+}
+.section5 {
+    background-color: #9dd8fb;
+}
+.section6 {
+    background-color: #ade0fe;
 }
 .journey-btn{
     right: 2.4rem;
@@ -150,16 +167,20 @@ input{
     animation-iteration-count: infinite;
 }
 #sun {
-    background-color: white;
-    height: 200px;
-    aspect-ratio: 0.5/0.5;
+    background-color: none;
+    height: 250px;
+    aspect-ratio: 1/1;
     position: fixed;
-    left: 50%;
     top: 50%;
-    translate: -50%, -50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     border-radius: 50%;
-    background: #F0EF39;
+    background-image: url(./images/backgrounds/sun/sun-mouse-track.png);
+    background-size: contain;
     z-index: -1;
+}
+.change-sun {
+    background-color: #F0EF39;
 }
 .header {
     margin: auto;
@@ -407,7 +428,6 @@ input{
 }
 .image.appear {
     opacity: 1;
-    animation: image-scale 1s ease-in;
 }
 .image-1 {
     width: 20vw;
