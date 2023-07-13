@@ -560,5 +560,24 @@ input{
     background-image: url(./images/backgrounds/background-places/footer-bg.png);
     background-size: contain;
     background-repeat: no-repeat;
-    cursor: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.footer-title{
+    margin-bottom: 25rem;
+    margin-right: 39rem;
+    width: 25rem;
+    height: 9rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.smaller-footer-title{
+    font-size: 3vw;
+}
+.larger-footer-title{
+    font-size: 5.2vw;
 }
