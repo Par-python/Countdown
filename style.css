@@ -560,17 +560,14 @@ input{
     background-image: url(./images/backgrounds/background-places/footer-bg.png);
     background-size: contain;
     background-repeat: no-repeat;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    color: white;
 }
 .footer-title{
-    margin-bottom: 25rem;
-    margin-right: 39rem;
+    position: absolute;
+    margin-left: 12rem;
+    margin-top: 9rem;
     width: 25rem;
     height: 9rem;
-    color: white;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -580,4 +577,49 @@ input{
 }
 .larger-footer-title{
     font-size: 5.2vw;
+}
+.footer-contents{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 35rem;
+    height: 9rem;
+    margin-left: 45rem;
+    margin-top: 9rem;
+}
+.footer-contents-title{
+    padding-top: 0.5rem;
+    font-size: 0.9vw; 
+}
+.gmail-pixel-logo{
+    width: 2rem;
+    height: 2rem;
+}
+.gmail-contact{
+    position: absolute;
+    padding-top: 2rem;
+    padding-left: 2rem;
+}
+.facebook-pixel-logo{
+    width: 1.7rem;
+    height: 1.7rem;
+    position: absolute;
+    margin-top: 3.5rem;
+}
+.facebook-contact{
+    position: absolute;
+    padding-top: 4rem;
+    padding-left: 2rem;
+}
+.instagram-pixel-logo{
+    width: 1.7rem;
+    height: 2rem;
+    position: absolute;
+    margin-top: 5.4rem;
+    margin-left: 0.2%;
+}
+.instagram-contact{
+    position: absolute;
+    padding-top: 6rem;
+    padding-left: 2rem;
 }
