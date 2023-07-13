@@ -85,7 +85,7 @@ body{
     background-color: #9dd8fb;
 }
 .section6 {
-    background-color: #ade0fe;
+    background-color: #56BEFA;
 }
 .journey-btn{
     right: 2.4rem;
@@ -535,7 +535,6 @@ input{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    border: 2px solid red;
 }
 .review-method-title{
     width: auto;
@@ -558,4 +557,8 @@ input{
 .footer{
     width: auto;
     height: 100vh;
+    background-image: url(./images/backgrounds/background-places/footer-bg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: auto;
 }
