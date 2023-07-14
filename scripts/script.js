@@ -22,11 +22,11 @@ const link = document.querySelectorAll('.hover');
 link.forEach(hover => {
   hover.addEventListener('mouseenter', () => {
     document.getElementById("sun").style.backgroundImage = 
-      'url(./images/backgrounds/sun/sun-hover-gif.gif)'
+      'url(/images/backgrounds/sun/sun-hover-gif.gif)'
   });
   hover.addEventListener('mouseleave', () => {
     document.getElementById("sun").style.backgroundImage =
-      'url(./images/backgrounds/sun/sun-mouse-track.png)'
+      'url(/images/backgrounds/sun/sun-mouse-track.png)'
   });
 });
 

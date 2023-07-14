@@ -186,7 +186,7 @@ input{
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 50%;
-    background-image: url(./images/backgrounds/sun/sun-mouse-track.png);
+    background-image: url(/images/backgrounds/sun/sun-mouse-track.png);
     background-size: contain;
     z-index: -1;
 }
@@ -332,46 +332,46 @@ input{
     left: 47%;
 }
 .whole-card:nth-child(2) {
-    background-image: url(./images/cards/heather_card.png);
+    background-image: url(/images/cards/heather_card.png);
     background-size: contain;
     background-repeat: repeat;
     transform: translateX(-10%) rotate(-1deg);
 }
 .whole-card:nth-child(4){
-    background-image: url(./images/cards/david_card.png);
+    background-image: url(/images/cards/david_card.png);
     background-size: contain;
     background-repeat: repeat;
     transform: rotate(2deg);
 }
 .whole-card:nth-child(6) {
-    background-image: url(./images/cards/coi_card.png);
+    background-image: url(/images/cards/coi_card.png);
     background-size: contain;
     background-repeat: repeat;
     transform: translateX(-6%) rotate(-3deg);
 }
 .whole-card:nth-child(8) {
-    background-image: url(./images/cards/raj_card.png);
+    background-image: url(/images/cards/raj_card.png);
     background-size: contain;
     background-repeat: repeat;
     transform: translate(10%, 3%) rotate(5deg);
 }
 .small-card:nth-child(1) {
-    background-image: url(./images/cards/heather_card.png);
+    background-image: url(/images/cards/heather_card.png);
     background-size: contain;
     background-repeat: repeat;
 }
 .small-card:nth-child(3){
-    background-image: url(./images/cards/back_card.png);
+    background-image: url(/images/cards/back_card.png);
     background-size: contain;
     background-repeat: repeat;
 }
 .small-card:nth-child(5) {
-    background-image: url(./images/cards/coi_card.png);
+    background-image: url(/images/cards/coi_card.png);
     background-size: contain;
     background-repeat: repeat;
 }
 .small-card:nth-child(7) {
-    background-image: url(./images/cards/david_card.png);
+    background-image: url(/images/cards/david_card.png);
     background-size: contain;
     background-repeat: repeat;
 }
@@ -481,7 +481,7 @@ input{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url(./images/backgrounds/background-places/journal-bg.png);
+    background-image: url(/images/backgrounds/background-places/journal-bg.png);
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -566,9 +566,10 @@ input{
 .footer{
     width: auto;
     height: 100vh;
-    background-image: url(./images/backgrounds/background-places/footer-bg.png);
-    background-size: contain;
+    background-image: url(/images/backgrounds/background-places/footer-bg.png);
+    background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     color: white;
 }
 .footer-title{
