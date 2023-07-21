@@ -303,6 +303,12 @@ body {
         height: 30vh;
         width: 40vw;
     }
+    .instructions {
+        height: 90vh;
+        width: 70vw;
+        animation: stay-cards 2s ease-in-out infinite;
+        z-index: 4;
+    }
 }
 
 
