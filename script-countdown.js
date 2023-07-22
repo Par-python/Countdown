@@ -24,6 +24,10 @@ const countDown = () => {
     document.querySelector('.hour').innerText = textHour;
     document.querySelector('.minute').innerText = textMinute;
     document.querySelector('.second').innerText = textSecond;
+
+    if (gap < 100) {
+        window.location.replace("/html/gift-for-them-hiweh.html")
+    }
 };
 
 setInterval(countDown, 1000);

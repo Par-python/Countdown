@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock paper scissors-6</title> 
+    <link rel ="stylesheet" href="/styles/rock-paper-scissors.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9d00480bf4.js" crossorigin="anonymous"></script>
+    </head>
+<body>
+    <input type="checkbox" id="active">
+    <label for="active" class="journey-btn"><i class="fas fa-bars"></i></label>
+    <div class="navbar">
+        <ul class="journey">
+            <li><a href="/html/gift-for-them-hiweh.html">Home</a></li>
+            <li><a href="#">About You</a></li>
+            <li><a href="/html/memories.html">Memories</a></li>
+            <li><a href="/html/games.html">Games</a></li>
+            <li><a href="#">Review Method</a></li>
+        </ul>
+    </div>
+    <div class="rock-paper-scissors">
+        <p class="title"> Rock Paper Scissors</p>
+        <div class="game-button">
+            <button class="move-button js-rock-button">
+                <img src="/images/backgrounds/games/rock-paper-scissors/rock-emoji.png" class="move-icon">
+            </button>
+            <button class="move-button js-paper-button">
+                <img src="/images/backgrounds/games/rock-paper-scissors/paper-emoji.png" class="move-icon">
+            </button>
+            <button class="move-button js-scissors-button">
+                <img src="/images/backgrounds/games/rock-paper-scissors/scissors-emoji.png" class="move-icon">
+            </button>
+        </div>
+        <p class="js-result result"></p>
+        <p class="js-moves"></p>
+        <p class="js-score score"></p>
+        <div class="mechanics-button">
+        <button onclick="
+            score.wins = 0;
+            score.losses = 0;
+            score.ties = 0;
+            localStorage.removeItem('score');
+            updateScoreElement();
+        "class="reset-score-button">Reset Score</button>
+        <button onclick="
+            autoPlay();
+        " class="auto-play-button">Auto Play</button>
+        </div>
+    </div>
+    <script src="/scripts/rock-paper-scissors.js"></script>
+</body>
+</html>
