@@ -499,7 +499,7 @@ input{
     justify-content: center;
 }
 .journals-text{
-    width: 75vh;
+    width: 80vh;
     height: 30vh;
     display: flex;
     flex-direction: column;
@@ -515,6 +515,8 @@ input{
 }
 .book-gif{
     cursor: none;
+    height: 30vh;
+    margin-bottom: 3rem;
 }
 .super-mario-jumping{
     position: absolute;
