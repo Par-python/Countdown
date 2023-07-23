@@ -65,39 +65,3 @@ body{
 input{
     display: none;
 }
-.rock-paper-scissors{
-    background-image: url(/images/backgrounds/background-places/games-bg.png);
-}
-.games-title-screen {
-    width: auto;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.games-title{
-    font-size: 5vw;
-    color:white;
-}
-.games-content{
-    width: 50vw;
-    height: 35vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-.games{
-    width: 16vw;
-    height: 30vh;
-    background-image: url(/images/backgrounds/games/rock\ paper\ scissors-icon.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    box-shadow: 5px 0 #f8f7f7, -5px 0 #f8f7f7, 0 -5px #f8f7f7, 0 5px #f8f7f7, 10px 0 #202529, -10px 0 #202529, 0 -10px #202529, 0 10px #202529, 0 0 0 5px #202529;
-    transition: transform 800ms ease;
-    cursor: url('data:image/x-icon;base64,AAACAAEAICAQAAEABQDoAgAAFgAAACgAAAAgAAAAQAAAAAEABAAAAAAAAAIAAAAAAAAAAAAAEAAAAAAAAACwsLAAAAAAAFRUVAD6+voAxMTEANbW1gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERIiEREREREREREREREREREiAiERERERERERERERERERIAACEREREREREREREiIiEiAAACEREREREREREiIAACIgBUACERERERERESIAAAAAIFNVQCERERERERIABEVUAAJTMzVSEREREREgAFUzNVAAMzMzMhERERESIFUzMzM1UAMzMzUhERERIgQzADMzMzMFMzMzIREREgADMiAzMzMzNAUzMzIRERIAMyIEMzMzMzMCMzNSERESAzISQzMzMzMzUFMzIREREjMhElMzMyMzMzQjMiEREREiESUzMyIzNTMyEiIRERERERIjMzIjMyMzMhIREREREREgMzMzMzIzMzIRERERERESAzMzMzMiMyMyERERERESIjMzUjMzMzIzIRERERERJFMzNSAzMzMiMyERERERESQzM1JDMzAzMzAhEREREREjMzMhIzMjMzMyEREREREREjMyERIiM1I1IREREREREREiIRERESIhIhERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERH//////////////////8f///+D////gf//wQD//wAAf/4AAD/8AAAf+AAAH/AAAA/gAAAPwAAAB8AAAAfBAAAPwwAAD+YAAR/8AAF/+AAB//AAAf/AAAP/gAAD/4AAA/+AgAf/wcAP/+P4n////////////////////////////w=='), auto;
-}
-.games:hover {
-    transform: scale(1.1);
-}
