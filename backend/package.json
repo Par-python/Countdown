@@ -1,0 +1,12 @@
+{
+  "name": "gift-for-people-yes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script-supershy.js",
+  "scripts": {
+    "start": "nodemon script-supershy.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
+ 
