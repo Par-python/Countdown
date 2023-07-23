@@ -65,3 +65,18 @@ body{
 input{
     display: none;
 }
+#image-track{
+    display: flex;
+    gap: 4vmin;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(0%, -50%);
+}
+#image-track > .image {
+    width: 40vmin;
+    height: 60vmin;
+    box-shadow: 5px 0 #f8f7f7, -5px 0 #f8f7f7, 0 -5px #f8f7f7, 0 5px #f8f7f7, 10px 0 #202529, -10px 0 #202529, 0 -10px #202529, 0 10px #202529, 0 0 0 5px #202529;
+    object-fit: cover;
+    object-position: center;
+}
