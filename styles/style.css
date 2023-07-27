@@ -652,6 +652,9 @@ input{
     .navbar ul{
         font-size: 6vw;   
     }
+    #sun{
+        display: none;
+    }
     .header{
         margin: auto;
         display: flex;

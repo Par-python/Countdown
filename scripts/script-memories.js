@@ -1,3 +1,4 @@
+
 const gallery = document.getElementById("gallery");
 
 window.onmousemove = e => {
@@ -21,3 +22,5 @@ window.onmousemove = e => {
     easing: "ease"
   })
 }
+
+
