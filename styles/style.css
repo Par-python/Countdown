@@ -297,11 +297,11 @@ input{
 }
 .cards{
     width:auto;
-    height: 100vh;
+    height: 70vh;
     display: grid;
     place-items: center;
+    margin-top: 6rem;
     z-index: 3;
-    /* border: 2px solid green; */
 }
 .card-group,
 .card{
@@ -400,13 +400,13 @@ input{
 .card-group:hover > .small-card:nth-child(7){
     transform: translate(-300%, 140%) rotate(-15deg);
 }
-.cards p{
+.introductions p{
     color:#fff;
     font-size: 3vw;
     text-transform: uppercase;
     z-index: 3;
     position: absolute;
-    margin-bottom: 80vh;
+    margin-bottom: auto;
 }
 .memories {
     width: auto;
@@ -674,16 +674,18 @@ input{
     .cloud-3{
         display: none;
     }
-    .cards > p{
-        border: 2px solid red;
-        width: 100%;
-        margin-right: 10rem;
-        position: absolute;
-    }
     .small-card{
         width: 12vmin;
         top: 159%;
         left: 47%;
+    }
+    .introductions p{
+        width: 100%;
+        font-size: 100%;
+        display: flex;
+        flex-direction: row; 
+        justify-content: center;
+        align-items: center;
     }
     .cloud-4 {
         display: none;
