@@ -10,7 +10,7 @@
         transform: translateX(-100%);
     }
     100% {
-        transform: translateX(900%);
+        transform: translateX(100%);
     }
 }
 @keyframes cloud-2{
@@ -79,6 +79,7 @@ body{
     transition: 2s all;
     cursor: none;
     overflow-x: hidden;
+    touch-action: pan-y;
 }
 .section2{
     background-color: #74c6f6;
@@ -643,4 +644,191 @@ input{
     z-index: -1;
     animation: icon-move 10s ease-in forwards;
     animation-iteration-count: infinite;
+}
+@media only screen and (max-width: 500px) {
+    * {
+        touch-action: pan-y;
+    }
+    .navbar ul{
+        font-size: 6vw;   
+    }
+    .header{
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .header p {
+        color:#fff;
+        font-size: 5vw;
+        text-transform: uppercase;
+        z-index: 3;
+        margin-left: 0.9vw;
+    }
+    .cloud-1{
+        display: none;
+    }
+    .cloud-2{
+        display: none;
+    }
+    .cloud-3{
+        display: none;
+    }
+    .small-card{
+        width: 12vmin;
+        top: 150%;
+        left: 47%;
+    }
+    .cloud-4 {
+        display: none;
+    }
+    .airplane-1{
+        display: none;
+    }
+    .airplane-2{
+        display: none;
+    }
+    .cloud-guy {
+        display: flex;
+        flex-direction: column;
+        height: 50vh;
+        width: 50vw;
+        position: absolute;
+        margin-left: 10vw;
+        margin-top: 15vh;
+        animation: stay-cloud-guy 2s ease-in-out infinite;
+        z-index: 3;
+    }
+    .cards > p{
+        font-size: 5vw;
+    }
+    .image-1 {
+        width: 35%;
+        margin-left: 50vw;
+        margin-top: 75vh;
+    }
+    .image-2 {
+        width: 35%;
+        margin-left: 50vw;
+        margin-top: 60vh;
+    }
+    .image-3 {
+        width: 50%;
+        margin-right: 30vw;
+        margin-top: 30vh;
+    }
+    .image-4 {
+        width: 40%;
+        margin-right: 40vw;
+        margin-top: 60vh;
+    }
+    .image-5 {
+        width: 25%;
+        margin-left: 60vw;
+        margin-top: 30vh;
+    }
+    .airplane-3{
+        display: none;
+    }
+    .journals{
+        background-image: url(/images/backgrounds/background-places/games-bg-mobile.png); 
+        background-size: cover; 
+        background-position: center center;
+        background-repeat: no-repeat; 
+        overflow-y: auto;
+    }
+    .cloud-5{
+        display: none;
+    }
+    .journals-name > p {
+        font-size: 10vw;
+    }
+    .journals-content{
+        width: 90%;
+        height: 30%;
+        flex-direction: row;
+        margin-top: 15rem;
+    }
+    .journals-text{
+        width: 100%;
+        height: 100%;
+        font-size: 5vw;
+        align-self: flex-start;
+    }
+    .learn-more-text{
+        font-size: 2vw;
+    }
+    .book-gif{
+        width: 6rem;
+        height: 4rem;
+        margin-left: 1rem;
+        margin-right: 5rem;
+        margin-bottom: 8rem;
+    }
+    .super-mario-castle{
+        display: none;
+    }
+    .super-mario-jumping{
+        display: none;
+    }
+    .lucky-block{
+        width: 10vh;
+        height: 10vh;
+        position:absolute;
+        margin-left: 19rem;
+    }
+    .review-method-title > p {
+        font-size: 5vw;
+    }
+    .review-method-description > p {
+        margin-top: 1rem;
+        font-size: 2vw;
+    }
+    .smaller-footer-title{
+        margin-top: 15rem;
+    }
+    .larger-footer-title{
+        margin-bottom: 10rem;
+    }
+    .footer-title{
+        position: absolute;
+        margin-left: 3rem;
+        margin-top: 9rem;
+        width: 7rem;
+        height: 9rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-contents{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: 15rem;
+        height: 9rem;
+        margin-left: 3rem;
+        margin-top: 20rem;
+    }
+    .footer-contents-title{
+        padding-top: 0.5rem;
+        font-size: 1.7vw; 
+    }
+    .gmail-contact{
+        font-size: 2vw; 
+    }
+    .facebook-contact{
+        font-size: 2vw; 
+    }
+    .instagram-contact{
+        font-size: 2vw; 
+    }
+    .cloud-logo{
+        display: none;
+    }
+    .footer{
+        background-image: url(/images/backgrounds/background-places/footer-bg.png);
+        background-size: cover; 
+        background-position: center center;
+        background-repeat: no-repeat; 
+        overflow-y: auto;
+    }
 }
