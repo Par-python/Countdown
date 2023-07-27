@@ -6,7 +6,7 @@ window.addEventListener('load', () => {
 document.addEventListener('click', audioPlay, {once:true})
 
 const countDown = () => {
-    const countDate = new Date('July 26, 2023 00:19:00').getTime();
+    const countDate = new Date('July 30, 2023 00:19:00').getTime();
     const now = new Date().getTime();
     const gap = countDate - now;
 
