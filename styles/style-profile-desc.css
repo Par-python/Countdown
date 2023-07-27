@@ -6,7 +6,11 @@
     font-family: 'Press Start 2P', cursive;
 }
 body{
-    background-color: #56BEFA;
+    background-image: url(/images/backgrounds/background-places/about-you-bg.png);
+    background-size: cover; 
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
     min-height: 100vh;
     overflow-x: hidden;
     transition: 2s all;
@@ -64,4 +68,181 @@ body{
 }
 input{
     display: none;
+}
+.image-grid{
+    --gap: 5rem;
+    --padding: 2rem;
+    --num-cols: 3;
+    --row-height: 300px;
+
+    box-sizing: border-box;
+    padding: var(--padding);
+
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols), 1fr);
+    grid-auto-rows: var(--row-height);
+    gap: var(--gap);
+}
+.box{
+    width: 100%;
+    height: 100%;
+    background-color: #d4d2d2;
+    box-shadow: 5px 0 #f8f7f7, -5px 0 #f8f7f7, 0 -5px #f8f7f7, 0 5px #f8f7f7, 10px 0 #202529, -10px 0 #202529, 0 -10px #202529, 0 10px #202529, 0 0 0 5px #202529;
+}
+.character-image{
+    grid-row: span 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.character-image > img{
+    width: 100%;
+    height: 80%;
+    object-fit: contain;
+}
+.character-image > span{
+   font-size: 2rem;
+   color: black;
+}
+.character-image > span:nth-child(2){
+    margin-top: 1rem;
+}
+.character-image > span:nth-child(3){
+    margin-top: 0.2rem;
+}
+.character-stats {
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+}
+.skill{
+    margin: 0.6rem;
+}
+.health{
+    width: 50%;
+    height: 25%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.health > img{
+    width: 15%;
+    height: 100%;
+}
+.health > span{
+    margin-left: 0.2rem;
+    font-size: 2rem;
+}
+.attack{
+    width: 60%;
+    height: 25%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.attack > img{
+    width: 15%;
+    height: 100%;
+}
+.attack > span{
+    margin-left: 0.2rem;
+    font-size: 2rem;
+}
+.defense{
+    width: 60%;
+    height: 25%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.defense > img{
+    width: 15%;
+    height: 100%;
+}
+.defense > span{
+    margin-left: 0.2rem;
+    font-size: 2rem;
+}
+.character-desc{
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.character-desc > span{
+    font-size: 1.5rem;
+}
+.description-content {
+    text-align: justify;
+    margin: 2rem;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+@media screen and (max-width: 750px){
+    body{
+        background-image: url(/images/backgrounds/background-places/about-you-bg.png); 
+        background-size: cover; 
+        background-position: center center;
+        background-repeat: no-repeat; 
+        background-attachment: fixed;
+        overflow-y: auto;
+    }
+    .image-grid{
+        --gap: 2rem;
+        --padding: 1rem;
+        --nums-cols: 2;
+        --row-height: 200px;
+    }
+    .character-image > img{
+        width: 100%;
+        height: 70%;
+        object-fit: contain;
+    }
+    .character-image{
+        grid-row: span 2;
+        grid-column: span 3;
+    }
+    .character-stats {
+        grid-column: span 3;
+    }
+    .health > span{
+        margin-left: 0.2rem;
+        font-size: 1rem;
+    }
+    .health > img{
+        width: 20%;
+        height: 100%;
+    }
+    .attack > span{
+        margin-left: 0.2rem;
+        font-size: 1rem;
+    }
+    .attack > img{
+        width: 20%;
+        height: 100%;
+    }
+    .defense > span{
+        margin-left: 0.2rem;
+        font-size: 1rem;
+    }
+    .defense{
+        width: 70%;
+    }
+    .defense > img{
+        width: 15%;
+        height: 100%;
+    }
+    .character-desc{
+        grid-column: span 3;
+    }
+    .character-desc > span{
+        margin-top: 1rem;
+        font-size: 1rem;
+    }
+    .description-content {
+        text-align: justify;
+        margin-top: 1rem;
+        font-size: 1rem;
+    }
 }

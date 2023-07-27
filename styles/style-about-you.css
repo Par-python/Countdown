@@ -83,7 +83,7 @@ input{
     height: 50vh;
     margin-top: 4rem;
     margin-left: 7rem;
-    background-color: #f8f7f7;
+    background-color: #d4d2d2;
     box-shadow: 5px 0 #f8f7f7, -5px 0 #f8f7f7, 0 -5px #f8f7f7, 0 5px #f8f7f7, 10px 0 #202529, -10px 0 #202529, 0 -10px #202529, 0 10px #202529, 0 0 0 5px #202529;
     list-style: none;
 }
