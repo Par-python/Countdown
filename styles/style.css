@@ -674,9 +674,14 @@ input{
     .cloud-3{
         display: none;
     }
+    .cards > p{
+        border: 2px solid red;
+        width: 100%;
+        text-align: center;
+    }
     .small-card{
         width: 12vmin;
-        top: 150%;
+        top: 159%;
         left: 47%;
     }
     .cloud-4 {
