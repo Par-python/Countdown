@@ -93,7 +93,6 @@ section{
 .slide{
     width: 20rem;
     height: 22rem;
-    border: 2px solid red;
     grid-row: 1;
 }
 .slide:nth-child(1){
