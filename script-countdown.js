@@ -26,7 +26,7 @@ const countDown = () => {
     document.querySelector('.second').innerText = textSecond;
 
     if (gap < 100) {
-        window.location.replace("/html/gift-for-them-hiweh.html")
+        window.location.replace("/html/the-cloud.html")
     }
 };
 
