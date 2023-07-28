@@ -69,7 +69,7 @@ input{
     width: auto;
     height: 100vh;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -77,6 +77,17 @@ input{
     font-size: 1vw;
     color: white;
     text-align: center;
+    margin-top: 1rem;
+}
+.review-method-pic{
+    width: 25rem;
+    height: 30rem;
+    margin-top: 2rem;
+    background-image: url(/images/backgrounds/drawing/Picsart_23-07-16_12-48-08-047.jpg);
+    background-size: cover; 
+    background-position: center center;
+    background-repeat: no-repeat; 
+    box-shadow: 5px 0 #f8f7f7, -5px 0 #f8f7f7, 0 -5px #f8f7f7, 0 5px #f8f7f7, 10px 0 #202529, -10px 0 #202529, 0 -10px #202529, 0 10px #202529, 0 0 0 5px #202529;
 }
 @media only screen and (max-width: 500px) {
     .navbar ul{
@@ -84,5 +95,9 @@ input{
     }
     .review-method-title > span {
         font-size: 2vw;
+    }
+    .review-method-pic{
+        width: 10rem;
+        height: 15rem;
     }
 }
