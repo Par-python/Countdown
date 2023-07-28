@@ -4,6 +4,9 @@ let score = JSON.parse(localStorage.getItem('score')) || {
     ties: 0
 };
 
+document.addEventListener('click', audioPlay, {once:true})
+
+
 updateScoreElement();
 
 let isAutoPlaying = false;
@@ -123,3 +126,10 @@ function pickComputerMove() {
 
     return computerMove;
 }
+
+function audioPlay() {
+    const audioMusic = new Audio('/images/backgrounds/music/game-page-background-music.mp3');
+    audioMusic.volume = 0.5;
+    audioMusic.loop = true;
+    audioMusic.play();
+  };

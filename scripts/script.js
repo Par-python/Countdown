@@ -17,6 +17,8 @@ window.onpointermove = event => {
 
 //   }, { duration: 1000, fill: "forwards" });
 
+document.addEventListener('click', audioPlay, {once:true})
+
 const link = document.querySelectorAll('.hover');
 
 link.forEach(hover => {
@@ -69,3 +71,9 @@ const appearOnScroll = new IntersectionObserver( function(entries, appearOnScrol
 imageFade.forEach(images => {
   appearOnScroll.observe(images);
 })
+
+function audioPlay() {
+  const audioMusic = new Audio('/images/backgrounds/music/home-page-baackground-music.mp3');
+  audioMusic.volume = 0.5;
+  audioMusic.play();
+};
