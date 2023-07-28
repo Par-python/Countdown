@@ -53,7 +53,7 @@ body{
     margin: 1rem, 1rem;
     padding-top: 2rem;
     position: relative;
-    font-size: 5vw;
+    font-size: 6vw;   
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
@@ -121,7 +121,7 @@ input{
         overflow-y: auto;
     }
     .navbar ul{
-        font-size: 6vw;   
+        font-size: 5vw;   
     }
     .frame {
         box-shadow: 5px 0 #f8f7f7, -5px 0 #f8f7f7, 0 -5px #f8f7f7, 0 5px #f8f7f7, 10px 0 #202529, -10px 0 #202529, 0 -10px #202529, 0 10px #202529, 0 0 0 5px #202529;
