@@ -101,6 +101,9 @@ input{
     transform: scale(1.1);
 }
 @media only screen and (max-width: 500px) {
+    .navbar ul{
+        font-size: 6vw;   
+    }
     .games-content{
         width: 65vw;
     }

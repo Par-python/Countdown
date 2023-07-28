@@ -188,6 +188,9 @@ input{
         background-attachment: fixed;
         overflow-y: auto;
     }
+    .navbar ul{
+        font-size: 6vw;   
+    }
     .image-grid{
         --gap: 2rem;
         --padding: 1rem;

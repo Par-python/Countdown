@@ -120,6 +120,9 @@ input{
         background-position: center;
         overflow-y: auto;
     }
+    .navbar ul{
+        font-size: 6vw;   
+    }
     .frame {
         box-shadow: 5px 0 #f8f7f7, -5px 0 #f8f7f7, 0 -5px #f8f7f7, 0 5px #f8f7f7, 10px 0 #202529, -10px 0 #202529, 0 -10px #202529, 0 10px #202529, 0 0 0 5px #202529;
         position: absolute;

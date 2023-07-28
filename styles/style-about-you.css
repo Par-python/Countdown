@@ -110,6 +110,9 @@ section{
   transition: ease-in-out 0.2s;
 }
 @media only screen and (max-width: 500px) {
+    .navbar ul{
+        font-size: 6vw;   
+    }
     .characters{
         display: flex;
         flex-direction: column;

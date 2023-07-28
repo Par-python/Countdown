@@ -69,4 +69,3 @@ const appearOnScroll = new IntersectionObserver( function(entries, appearOnScrol
 imageFade.forEach(images => {
   appearOnScroll.observe(images);
 })
-

@@ -148,6 +148,54 @@ body{
 input{
     display: none;
 }
+.loading-screen {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #83AEEC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    transition: opacity 2s cubic-bezier(0.68,-0.13, 0.97, 0.97);
+}
+.cloud-6,
+.cloud-7,
+.cloud-8 {
+    height:12rem;
+    width: 12rem;
+    position: absolute;
+    right: 0%;
+}
+.cloud-6 {
+    top: 25%;
+    transform: translate(100%, -25%);
+    animation: cloud-6 10s ease-in forwards;
+    animation-iteration-count: infinite;
+}
+.cloud-7 {
+    top: 50%;
+    transform: translate(100%, -50%);
+    animation: cloud-6 12s ease-in forwards;
+    animation-iteration-count: infinite;
+}
+.cloud-8 {
+    top: 75%;
+    transform: translate(100%, -75%);
+    animation: cloud-6 9s ease-in forwards;
+    animation-iteration-count: infinite;
+}
+.instructions {
+    height: 90vh;
+    width: 50vw;
+    animation: stay-cards 2s ease-in-out infinite;
+    z-index: 4;
+}
+.loading-finished{
+    opacity: 0;
+    pointer-events: none;
+}
 .clouds{
     display: flex;
     height: 100vh;
